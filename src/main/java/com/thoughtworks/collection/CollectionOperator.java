@@ -39,9 +39,10 @@ public class CollectionOperator {
     }
 
     public List<Integer> popEvenElments(int[] array) {
-//        Stream.of(Collections.singletonList(array)).filter(num -> )
-//        return Stream.of(array).filter(num -> num%2==0);
-        return null;
+        return Arrays.stream(array)
+                .filter(num -> num%2 == 0)
+                .boxed()
+                .collect(Collectors.toList());
     }
 
     public int popLastElment(int[] array) {
