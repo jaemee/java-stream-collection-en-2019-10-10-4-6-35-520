@@ -51,32 +51,32 @@ public class MyMapTest {
 //        assertThat(myMap.mapLetters()).isEqualTo(resultList);
 //    }
 
-    @Test
-    public void should_sort_from_big_to_small() {
-        //Sort from big to small
-        Integer[] array = new Integer[]{1, 2, 3, 4, 5};
-        List<Integer> list = Arrays.asList(array);
+//    @Test
+//    public void should_sort_from_big_to_small() {
+//        //Sort from big to small
+//        Integer[] array = new Integer[]{1, 2, 3, 4, 5};
+//        List<Integer> list = Arrays.asList(array);
+//
+//        MyMap myMap = new MyMap(list);
+//
+//        Integer[] result = new Integer[]{5, 4, 3, 2, 1};
+//        List<Integer> resultList = Arrays.asList(result);
+//
+//        assertThat(myMap.sortFromBig()).isEqualTo(resultList);
+//    }
 
-        MyMap myMap = new MyMap(list);
-
-        Integer[] result = new Integer[]{5, 4, 3, 2, 1};
-        List<Integer> resultList = Arrays.asList(result);
-
-        assertThat(myMap.sortFromBig()).isEqualTo(resultList);
-    }
-
-    @Test
-    public void should_sort_from_small_to_big() {
-        //Sort from small to large
-        Integer[] array = new Integer[]{3, 2, 4, 5, 1};
-        List<Integer> list = Arrays.asList(array);
-
-        MyMap myMap = new MyMap(list);
-
-
-        Integer[] result = new Integer[]{1, 2, 3, 4, 5};
-        List<Integer> resultList = Arrays.asList(result);
-
-        assertThat(myMap.sortFromSmall()).isEqualTo(resultList);
-    }
+//    @Test
+//    public void should_sort_from_small_to_big() {
+//        //Sort from small to large
+//        Integer[] array = new Integer[]{3, 2, 4, 5, 1};
+//        List<Integer> list = Arrays.asList(array);
+//
+//        MyMap myMap = new MyMap(list);
+//
+//
+//        Integer[] result = new Integer[]{1, 2, 3, 4, 5};
+//        List<Integer> resultList = Arrays.asList(result);
+//
+//        assertThat(myMap.sortFromSmall()).isEqualTo(resultList);
+//    }
 }
