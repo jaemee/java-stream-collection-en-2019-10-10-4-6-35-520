@@ -1,13 +1,10 @@
 package com.thoughtworks.collection;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
-import java.lang.reflect.Array;
-import java.util.*;
-import java.util.stream.Collector;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class Add {
     public int getSumOfEvens(int leftBorder, int rightBorder) {
@@ -56,7 +53,7 @@ public class Add {
         return arrayList.stream()
                 .filter(a -> a%2 == 0)
                 .mapToDouble(a -> a)
-                .average().getAsDouble();
+                .average().orElse(0);
     }
 
     public boolean isIncludedInEvenIndex(List<Integer> arrayList, Integer specialElment) {
@@ -68,7 +65,7 @@ public class Add {
     public List<Integer> getUnrepeatedFromEvenIndex(List<Integer> arrayList) {
         return arrayList.stream().filter(num -> num%2==0).distinct().collect(Collectors.toList());
     }
-
+// assign the even and off first before adding all
     public List<Integer> sortByEvenAndOdd(List<Integer> arrayList) {
         List<Integer> result = new ArrayList<>();
         result.addAll(arrayList.stream()

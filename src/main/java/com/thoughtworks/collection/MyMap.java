@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MyMap {
 
@@ -27,15 +28,25 @@ public class MyMap {
     }
 
     public List<String> mapLetters() {
+        String letter = "";
+
+//        array.stream().forEach(num -> {
+//            while(num - 26 > 26){
+//                letter += letterList.get()
+//
+//                });
+//        }
+//                letterList.get(num-1)).
+//                collect(Collectors.toList());
         return null;
     }
 
     public List<Integer> sortFromBig() {
-//        return array.st'
-        return null;
+
+        return array.stream().sorted().collect(Collectors.toList());
     }
 
     public List<Integer> sortFromSmall() {
-        throw new NotImplementedException();
+        return array.stream().sorted().collect(Collectors.toList());
     }
 }
