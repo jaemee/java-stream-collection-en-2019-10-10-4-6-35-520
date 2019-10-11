@@ -14,7 +14,7 @@ public class Add {
         int min = Math.min(leftBorder, rightBorder);
         int max = Math.max(leftBorder, rightBorder);
 
-        IntStream numbers = IntStream.range(min, max+1);
+        IntStream numbers = IntStream.rangeClosed(min, max);
 
         return numbers.filter(num -> num%2 == 0).sum();
     }
@@ -23,7 +23,7 @@ public class Add {
         int min = Math.min(leftBorder, rightBorder);
         int max = Math.max(leftBorder, rightBorder);
 
-        IntStream numbers = IntStream.range(min, max+1);
+        IntStream numbers = IntStream.rangeClosed(min, max);
 
         return numbers.filter(num -> num%2 != 0).sum();
     }

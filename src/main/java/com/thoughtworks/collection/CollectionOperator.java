@@ -2,7 +2,9 @@ package com.thoughtworks.collection;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class CollectionOperator {
     public List<Integer> getListByInterval(int left, int right) {
@@ -14,6 +16,7 @@ public class CollectionOperator {
     }
 
     public List<Integer> popEvenElments(int[] array) {
+//        IntStream stream = Arrays.asList(array).stream().;
         throw new NotImplementedException();
     }
 
