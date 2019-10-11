@@ -46,14 +46,23 @@ public class CollectionOperator {
     }
 
     public int popLastElment(int[] array) {
-        throw new NotImplementedException();
+        return Arrays.stream(array).skip(array.length - 1).findFirst().orElse(-1);
     }
 
     public List<Integer> popCommonElement(int[] firstArray, int[] secondArray) {
-        throw new NotImplementedException();
+        return Arrays.stream(firstArray)
+                .filter(Arrays.stream(secondArray)
+                        .boxed()
+                        .collect(Collectors.toList())::contains)
+                .boxed()
+                .collect(Collectors.toList());
     }
 
     public List<Integer> addUncommonElement(Integer[] firstArray, Integer[] secondArray) {
-        throw new NotImplementedException();
+        List<Integer> firstList = Arrays.stream(firstArray).collect(Collectors.toList());
+        List<Integer> secondList = Arrays.stream(secondArray).collect(Collectors.toList());
+        secondList.removeAll(firstList);
+        firstList.addAll(secondList);
+        return firstList;
     }
 }
