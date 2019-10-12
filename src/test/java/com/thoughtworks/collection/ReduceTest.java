@@ -10,39 +10,39 @@ import static org.mockito.Mockito.*;
 
 public class ReduceTest {
 
-//    @Test
-//    public void should_get_maximum_of_list() {
-//        // Get the maximum value in the array
-//        Integer[] array = new Integer[]{1, 5, 7, 2, 8, 9, 3, 2};
-//        List<Integer> arrayList = Arrays.asList(array);
-//
-//        Reduce reduce = new Reduce(arrayList);
-//
-//        assertThat(reduce.getMaximum()).isEqualTo(9);
-//    }
-//
-//    @Test
-//    public void should_get_minimum_of_list() {
-//        //Get the minimum value in the array
-//        Integer[] array = new Integer[]{9, 4, 5, 10, 34, 2, 1, 10, 16};
-//        List<Integer> arrayList = Arrays.asList(array);
-//
-//        Reduce reduce = new Reduce(arrayList);
-//
-//        assertThat(reduce.getMinimum()).isEqualTo(1);
-//    }
-//
-//    @Test
-//    public void should_get_average_of_list() {
-//        // Get the average of the array
-//        Integer[] array = new Integer[]{12, 34, 56, 78, 90, 21};
-//        List<Integer> arrayList = Arrays.asList(array);
-//
-//        Reduce reduce = new Reduce(arrayList);
-//
-//        assertThat(reduce.getAverage()).isEqualTo(48.5);
-//    }
-//
+    @Test
+    public void should_get_maximum_of_list() {
+        // Get the maximum value in the array
+        Integer[] array = new Integer[]{1, 5, 7, 2, 8, 9, 3, 2};
+        List<Integer> arrayList = Arrays.asList(array);
+
+        Reduce reduce = new Reduce(arrayList);
+
+        assertThat(reduce.getMaximum()).isEqualTo(9);
+    }
+
+    @Test
+    public void should_get_minimum_of_list() {
+        //Get the minimum value in the array
+        Integer[] array = new Integer[]{9, 4, 5, 10, 34, 2, 1, 10, 16};
+        List<Integer> arrayList = Arrays.asList(array);
+
+        Reduce reduce = new Reduce(arrayList);
+
+        assertThat(reduce.getMinimum()).isEqualTo(1);
+    }
+
+    @Test
+    public void should_get_average_of_list() {
+        // Get the average of the array
+        Integer[] array = new Integer[]{12, 34, 56, 78, 90, 21};
+        List<Integer> arrayList = Arrays.asList(array);
+
+        Reduce reduce = new Reduce(arrayList);
+
+        assertThat(reduce.getAverage()).isEqualTo(48.5);
+    }
+
 //    @Test
 //    public void should_get_element_in_middle_position_with_order_elements() {
 //        // Get the array median
